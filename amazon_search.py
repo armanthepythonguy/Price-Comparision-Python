@@ -4,7 +4,7 @@ def amazonSearch(keyword):
     querystring = {"keywords":keyword,"marketplace":"US"}
     headers = {
         'x-rapidapi-host': "amazon-price1.p.rapidapi.com",
-        'x-rapidapi-key': "2bd459e39emsh0af302602dde003p180f97jsn8385827d271d"
+        'x-rapidapi-key': "YOUR API KEY"
         }
     response = requests.request("GET", url, headers=headers, params=querystring)
     response = response.json()

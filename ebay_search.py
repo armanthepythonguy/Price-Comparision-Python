@@ -4,7 +4,7 @@ def ebaySearch(keyword):
     querystring = {"query":keyword}
     headers = {
         'x-rapidapi-host': "ebay-product-search-scraper.p.rapidapi.com",
-        'x-rapidapi-key': "2bd459e39emsh0af302602dde003p180f97jsn8385827d271d"
+        'x-rapidapi-key': "YOUR API KEY"
         }
     response = requests.request("GET", url, headers=headers, params=querystring)
     response = response.json()
